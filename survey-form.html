@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+        <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form which is a must to fill by the users in order to proceed.</p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your Name" required><br>
+      <label id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="example@email.com" required><br>
+      <label id="number-label">Enter a number:</label>
+      <input type="number" id="number" name="number" min="5" max="100" placeholder="Enter a number"><br>
+      <label id="dropdown-label">Gender:</label>
+      <select id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <p>Age:
+      <label for="age"><18</label>
+      <input type="radio" for="age" name="age" value="<18">
+      <label for="age">18+</label>
+      <input type="radio" for="age" value="18+" name="age">
+      </p>
+      <p>Course:
+        <label for="course">Bsc.CSIT</label>
+        <input type="checkbox" value="Bsc.CSIT" id="course" name="course">
+        <label for="course">BBA</label>
+        <input type="checkbox" value="BBA" id="course" name="course">
+        <label for="course">BCA</label>
+        <input type="checkbox" value="BCA" id="course" name="course">
+      </p>
+      <label for="comments">Comments:</label>
+      <textarea name="comments" id="comments" placeholder="Enter any feedback."></textarea><br>
+      <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
